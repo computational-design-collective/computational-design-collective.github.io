@@ -1,0 +1,91 @@
+  # Project Information
+site_name: CoDe Collective
+docs_dir: docs
+site_url: https://www.codecollective.org/
+site_author: Kaushik L. S.
+site_description: Computational Design Collective x India
+dev_addr: 0.0.0.0:8181
+
+# The below folders (and files) are included in the build process.
+# They are just hidden from the main/home page.
+exclude_docs: |
+  Templates/
+
+#region Site Footer
+# Copyright Information
+copyright: Copyright &copy; 2024 <a href="https://github.com/computational-design-collective">Computational Design Collective</a>
+
+extra:
+  generator: false
+#endregion Site Footer
+
+#region Extensions & Plugins
+markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true # Round Checkbox
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+     permalink: true
+
+extra_javascript:
+  - mkdocs/javascripts/mathjax.js
+  - mkdocs/javascripts/polyfill.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins: []
+#endregion Extensions & Plugins
+
+#region Theme Design
+theme:
+  name: material
+  highlightjs: true
+
+  # Typography
+  font: 
+    text: Nunito
+    code: Roboto Mono
+
+  # Icons
+  logo: resources/Icon_512x512.png
+  favicon: resources/Icon_512x512.png
+  icon:
+    repo: fontawesome/brands/github
+  
+  # Colors
+  palette:
+      primary: black  
+      accent: purple
+  
+  # Additional Features
+  features:    
+    # Header
+    - header.autohide         # Hide Header when scrolling
+    # Navigation Bar / Path
+    - navigation.top          # Back to top
+    #- navigation.tabs        # Displays a navigation menu below header
+    - navigation.tracking     # URL tracks headers
+    - navigation.sections     # Displays folders as sections
+    #- nativation.indexes     # Documents can be directly attached to sections
+    #- navigation.expand      # Auto Expand everything
+    - navigation.path         # Breadcrumbs
+    #- navigation.prune       # Optimizes site by not rendering the entire navigation list
+#endregion Theme Design
