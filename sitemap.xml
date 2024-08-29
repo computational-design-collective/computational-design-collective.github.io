@@ -2,7 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.codecollective.org/</loc>
-         <lastmod>2024-08-28</lastmod>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.codecollective.org/codetober/</loc>
+         <lastmod>2024-08-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.codecollective.org/events/2024-october-challenge/subscribe/</loc>
+         <lastmod>2024-08-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
