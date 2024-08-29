@@ -13,7 +13,7 @@ exclude_docs: |
 
 #region Site Footer
 # Copyright Information
-copyright: Copyright &copy; 2024 <a href="https://github.com/computational-design-collective">Computational Design Collective</a>
+copyright: <a href="https://github.com/computational-design-collective/computational-design-collective.github.io" target="_blank">&copy;2024 Computational Design Collective</a>
 
 extra:
   generator: false
@@ -58,6 +58,7 @@ plugins: []
 theme:
   name: material
   highlightjs: true
+  custom_dir: overrides
 
   # Typography
   font: 
@@ -74,6 +75,7 @@ theme:
   palette:
       primary: black  
       accent: purple
+      #scheme: slate
   
   # Additional Features
   features:    
@@ -81,7 +83,7 @@ theme:
     - header.autohide         # Hide Header when scrolling
     # Navigation Bar / Path
     - navigation.top          # Back to top
-    #- navigation.tabs        # Displays a navigation menu below header
+    #- navigation.tabs         # Displays a navigation menu below header
     - navigation.tracking     # URL tracks headers
     - navigation.sections     # Displays folders as sections
     #- nativation.indexes     # Documents can be directly attached to sections
